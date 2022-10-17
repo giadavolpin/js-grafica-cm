@@ -34,7 +34,7 @@ function play (){
 }
 
 // L'utente clicca su un bottone 
-playButton.addEventListener('click', play);
+playButton.addEventListener('click', playButton);
 
 
    
