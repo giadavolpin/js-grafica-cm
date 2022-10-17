@@ -27,11 +27,10 @@ function play (){
         }
         campoGioco.appendChild(grid);
     }
-    //chiamo la funzione 
-    play();
-
-
+   
 }
+ //chiamo la funzione fuori dalla funzione stessa
+ play();
 
 // L'utente clicca su un bottone 
 playButton.addEventListener('click', playButton);
