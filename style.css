@@ -12,7 +12,7 @@ main{
     align-content: flex-start;
     width: 500px;
     height: 500px;
-    background-color: lightgray;
+    background-color: rgb(129, 126, 126);
 }
 .square{
     display: flex;
