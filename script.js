@@ -11,3 +11,15 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 
 
 
+const playButton = document.getElementById(playButton);
+
+// L'utente clicca su un bottone 
+playButton.addEventListener('click', function()) {
+// che genererà una griglia di gioco quadrata. 
+    let grid = document.createElement ('grid');
+
+}
+
+
+
+// Ogni cella ha un numero progressivo, da 1 a 100.
