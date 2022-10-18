@@ -10,13 +10,23 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 
 
 
-
+//richiamo il bottone dall'HTML
 const playButton = document.getElementById('playButton');
+
 function play (){
     console.log('inizio gioco...')
     const numeroCell = 100;
     
-    // al click del bottone si genererà una griglia di gioco quadrata. 
+    function Celle(numeroCell){
+        const cell = document.createElement('div');
+        cell.className = 'square';
+        cell.innerHTML = `
+        <span>${numeroCell}<span>
+        `;
+        return cell;
+    }
+
+    // al click del bottone si genererà la griglia di gioco. 
     function campoMinato(){
         const campoGioco = document.getElementById('campoDiGioco'); 
         const grid = document.createElement('div');
@@ -29,8 +39,9 @@ function play (){
     }
    
 }
- //chiamo la funzione fuori dalla funzione stessa
- play();
+ 
+//chiamo la funzione fuori dalla funzione stessa
+play();
 
 // L'utente clicca su un bottone 
 playButton.addEventListener('click', playButton);
